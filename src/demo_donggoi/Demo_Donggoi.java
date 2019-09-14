@@ -13,6 +13,7 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import java.awt.TextArea;
 import javafx.scene.layout.StackPane;
 import javax.swing.JApplet;
 import javax.swing.JFrame;
@@ -76,16 +77,24 @@ public class Demo_Donggoi extends JApplet {
     
     private void createScene() {
         Button btn = new Button();
-        btn.setText("Say 'Hello World'");
+        btn.setText("Say '10+20=?'");
         btn.setOnAction(new EventHandler<ActionEvent>() {
             
             @Override
             public void handle(ActionEvent event) {
-                System.out.println("Hello World!");
+                int a=10;
+                int b=20;
+                System.out.println(a+" + "+b+" = "+(a+b));
             }
         });
+
+// PTT
+        TextArea ta = new TextArea();
+        ta.setText("'Hello World'");
+                
         StackPane root = new StackPane();
         root.getChildren().add(btn);
+        
         fxContainer.setScene(new Scene(root));
     }
     
