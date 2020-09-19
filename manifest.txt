@@ -1,0 +1,4 @@
+Manifest-version: 1.0
+Created-By: Pham Thi Thuong (12/09/2020)
+Main-Class: Hello
+Implementation-Vendo: ICTU-TNU
